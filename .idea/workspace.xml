@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d59275c4-7a38-4636-8818-37f4ca53fdf1" name="Changes" comment="Serverlets">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/entities/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/entities/User.java" afterDir="false" />
+    <list default="true" id="d59275c4-7a38-4636-8818-37f4ca53fdf1" name="Changes" comment="Started implementation of entityes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/common/CarDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/ejb/CarsBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
@@ -16,8 +16,11 @@
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/ParkingLot-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/ParkingLot-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/Cars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/Cars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/cars.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/cars.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +38,7 @@
         <option value="Servlet" />
         <option value="Jsp File" />
         <option value="com.intellij.jpb.JpaEntity" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -53,6 +57,9 @@
     &quot;accountId&quot;: &quot;f0a42a6a-9186-42a8-a6f3-a8969d56deb7&quot;
   }
 }</component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -192,7 +199,11 @@
       <workItem from="1731240757638" duration="32000" />
       <workItem from="1731310183199" duration="1305000" />
       <workItem from="1731311501845" duration="58000" />
-      <workItem from="1731311572846" duration="693000" />
+      <workItem from="1731311572846" duration="2994000" />
+      <workItem from="1731328432065" duration="463000" />
+      <workItem from="1731329348913" duration="328000" />
+      <workItem from="1731329693687" duration="124000" />
+      <workItem from="1731923331001" duration="3333000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -234,7 +245,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730711480868</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Started implementation of entityes">
+      <option name="closed" value="true" />
+      <created>1731312297478</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1731312297479</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +263,7 @@
     <MESSAGE value="Init commit" />
     <MESSAGE value="Added header and footer" />
     <MESSAGE value="Serverlets" />
-    <option name="LAST_COMMIT_MESSAGE" value="Serverlets" />
+    <MESSAGE value="Started implementation of entityes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started implementation of entityes" />
   </component>
 </project>
