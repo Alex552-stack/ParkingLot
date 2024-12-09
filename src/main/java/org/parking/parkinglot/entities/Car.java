@@ -15,10 +15,6 @@ public class Car {
     @Column(name = "parking_spot")
     private String parkingSpot;
 
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "car_id")
-    private Car car;
-
     @ManyToOne
     @JoinColumn(name = "owner_id")
     private User owner;
@@ -29,14 +25,6 @@ public class Car {
 
     public void setOwner(User owner) {
         this.owner = owner;
-    }
-
-    public Car getCar() {
-        return car;
-    }
-
-    public void setCar(Car car) {
-        this.car = car;
     }
 
     public String getParkingSpot() {
