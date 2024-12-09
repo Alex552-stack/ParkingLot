@@ -43,3 +43,6 @@ bin/
 /.gradle/
 /.gradle/
 /build/
+*.bin
+*.war
+*.lock

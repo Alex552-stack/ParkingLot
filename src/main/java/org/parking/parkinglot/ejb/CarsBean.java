@@ -74,7 +74,7 @@ public class CarsBean {
 
         for (Long carid : carIds)
         {
-            Car car = entityManager.find(Car.class, carIds);
+            Car car = entityManager.find(Car.class, carid);
             entityManager.remove(car);
         }
     }
