@@ -3,21 +3,34 @@ package org.parking.parkinglot.entities;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "car")
+@Table(name = "cars")
 public class Car {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false)
     private Long id;
 
-    @Column(name = "license_plate")
-    private String licensePlate;
+    @ManyToOne
+    @JoinColumn(name = "owner_id", nullable = true) // Nullable to prevent validation issues
+    private User owner;
 
-    @Column(name = "parking_spot")
+    @Column(name = "parking_spot", unique = true, length = 100) // No @Size or @NotNull constraints
     private String parkingSpot;
 
-    @ManyToOne
-    @JoinColumn(name = "owner_id")
-    private User owner;
+    @Column(name = "license_plate", unique = true, length = 100) // No @Size or @NotNull constraints
+    private String licensePlate;
+
+    @OneToOne(mappedBy = "car", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private CarPhoto photo;
+
+    // Getters and Setters
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public User getOwner() {
         return owner;
@@ -43,11 +56,11 @@ public class Car {
         this.licensePlate = licensePlate;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public CarPhoto getPhoto() {
+        return photo;
     }
 
-    public Long getId() {
-        return id;
+    public void setPhoto(CarPhoto photo) {
+        this.photo = photo;
     }
 }

@@ -4,11 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d59275c4-7a38-4636-8818-37f4ca53fdf1" name="Changes" comment="Started implementation of entityes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/Logout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/entities/UserGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" afterDir="false" />
+    <list default="true" id="d59275c4-7a38-4636-8818-37f4ca53fdf1" name="Changes" comment="Lab 9 pe jumatate gata">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/AddCarPhoto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/AddUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/CarPhotos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/EditUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/common/CarPhotoDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/ejb/InvoiceBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/ejb/PasswordBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/ejb/UsersBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/entities/CarPhoto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/rest/CarsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/rest/ParkingLotApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/cars/addCar.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/cars/addCarPhoto.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/cars/cars.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/cars/editCar.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/users/addUser.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/users/editUser.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/users/users.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
@@ -16,12 +31,39 @@
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/parking/parkinglot/HelloServlet.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/ParkingLot-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/ParkingLot-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/META-INF/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/META-INF/beans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/AddCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/AddCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/Cars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/Cars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/EditCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/EditCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/Logout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/Logout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/common/CarDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/common/CarDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/common/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/common/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/ejb/CarsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/ejb/CarsBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/ejb/UserBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/entities/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/entities/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/entities/UserGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/parking/parkinglot/entities/UserGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addCar.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/cars.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/editCar.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/users.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/pageTemplate.tag" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/pageTemplate.tag" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/about.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/about.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/form-validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/form-validation.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,24 +122,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;GlassFish Server.GlassFish 7.0.9.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build ParkingLot.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Alex/Desktop/Projects/ParkingLot&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "GlassFish Server.GlassFish 7.0.9.executor": "Debug",
+    "Gradle.Build ParkingLot.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Alex/Desktop/Projects/ParkingLot",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Alex\Desktop\Projects\ParkingLot\src\main\webapp\WEB-INF\pages" />
@@ -213,7 +256,13 @@
       <workItem from="1733476310373" duration="779000" />
       <workItem from="1733477308893" duration="3942000" />
       <workItem from="1733728912625" duration="4880000" />
-      <workItem from="1734335142320" duration="4425000" />
+      <workItem from="1734335142320" duration="4656000" />
+      <workItem from="1734446055819" duration="714000" />
+      <workItem from="1735829631008" duration="404000" />
+      <workItem from="1735830407244" duration="1000" />
+      <workItem from="1736077842143" duration="21000" />
+      <workItem from="1736100228110" duration="26000" />
+      <workItem from="1736712076800" duration="4952000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -271,7 +320,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731927407179</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Lab 9 pe jumatate gata">
+      <option name="closed" value="true" />
+      <created>1734339794687</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1734339794687</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,6 +350,23 @@
     <MESSAGE value="Added header and footer" />
     <MESSAGE value="Serverlets" />
     <MESSAGE value="Started implementation of entityes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started implementation of entityes" />
+    <MESSAGE value="Lab 9 pe jumatate gata" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab 9 pe jumatate gata" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/parking/parkinglot/AddCar.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/parking/parkinglot/ejb/CarsBean.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
